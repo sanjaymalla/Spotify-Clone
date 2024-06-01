@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="items-center home bg-grey rounded m-1 p-1">
+                <ul>
+                    <li><img class="invert svg-width1" src="svg/home.svg" alt="home">Home</li>
+                    <li><img class="invert svg-width1" src="svg/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="your-library flex">
+                    <div class="library-content flex">
+                        <img class="invert svg-width1" src="svg/library.svg" alt="library">
+                        Your Library
+                    </div>
+                    <div class="library-icons flex">
+                        <img class="invert svg-width2" src="svg/plus.svg" alt="add">
+                        <img class="invert svg-width2" src="svg/arrow.svg" alt="show more">
+                    </div>
+                </div>
+                <div class="bubbles flex">
+                    <div class="playlist bubble">
+                        Playlists
+                    </div>
+                    <div class="podcast bubble">
+                        Podcasts & Shows
+                    </div>
+                </div>
+                <div class="songlist">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+        <div class="right ">
+            <div class="main border bg-grey rounded">
+                <header>
+                    <nav>
+                        <div class="hamburgerContainer flex">
+                            <img class="invert svg-width2" src="svg/left.svg" alt="left">
+                            <img class="invert svg-width2" src="svg/right.svg" alt="right">
+                        </div>
+                        <div class="buttons flex items-center">
+                            <button class="explore btn">Explore Premium</button>
+                            <button class="install btn">Install App</button>
+                            <button class="notification btn">
+                                <img class="invert svg-width2" src="svg/notification.svg" alt="notification">
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="bubbles flex">
+                        <div class="all bubble">
+                            All
+                        </div>
+                        <div class="Music bubble">
+                            Music
+                        </div>
+                        <div class="pod bubble">
+                            Podcasts
+                        </div>
+                    </div>
+                </header>
+                <div class="playlists">
+                    <h1>Spotify Playlists</h1>
+                    <div class="cardContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="songinfo">
+            <!-- <div class="songimg">
+                    <img src="AC_DC.jpg" alt="">
+                </div>
+                <div class="description">
+                    <h4>${result.songName}</h4>
+                    <p>${result.artistName}</p>
+                </div> -->
+        </div>
+        <div class="playControl">
+            <div class="controlButtons">
+                <img id="shuffle" class="invert svg-width1" src="svg/shuffle.svg" alt="">
+                <img id="previous" class="invert svg-width1" src="svg/playleft.svg" alt="">
+                <img id="play" class="invert svg-width1" src="svg/play.svg" alt="">
+                <img id="next" class="invert svg-width1" src="svg/playright.svg" alt="">
+                <img id="repeat" class="invert svg-width1" src="svg/repeat.svg" alt="">
+            </div>
+            <div class="bar">
+                <div class="current time">00:00</div>
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="total time">00:00</div>
+            </div>
+        </div>
+        <div class="volume">
+            <img class="invert svg-width1" src="svg/volume.svg" alt="">
+            <!-- <img class="invert svg-width1" src="mute.svg" alt=""> -->
+            <div class="range">
+                <input type="range">
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
